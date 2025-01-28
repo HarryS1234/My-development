@@ -68,3 +68,93 @@ html, body {
   max-width: 600px;
   height: auto;
 }
+
+
+/* Custom super bounce animation */
+@keyframes superBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-super-bounce {
+  animation: superBounce 1.5s infinite;
+}
+
+/* Custom slow spin animation */
+@keyframes spinSlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 3s linear infinite;
+}
+//* Custom CSS for phones */
+@media (max-width: 640px) {
+  /* Left Side Oval */
+  .absolute.flex.flex-col.space-y-4 .bg-\[\#1dbbec\] {
+    width: 200px !important; /* Increase width for phones */
+    height: 100px !important; /* Increase height for phones */
+    font-size: 14px !important; /* Adjust font size for phones */
+  }
+
+  /* Main Centered Oval */
+  .absolute.bg-\[\#1dbbec\].border-2.border-white.opacity-90 {
+    width: 280px !important; /* Decrease width for phones to avoid overflow */
+    height: 150px !important; /* Decrease height for phones */
+    top: 10em !important; /* Adjust position for phones */
+    left: 50% !important; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust position to fully center it */
+  }
+
+  /* Adjust font size inside the centered oval */
+  .absolute.bg-\[\#1dbbec\].border-2.border-white.opacity-90 p {
+    font-size: 10px !important; /* Smaller font size for phones */
+  }
+
+  .absolute.bg-\[\#1dbbec\].border-2.border-white.opacity-90 p span {
+    font-size: 12px !important; /* Adjust heading font size for phones */
+  }
+}
+
+/* Custom CSS for tablets (iPads and similar devices) */
+@media (max-width: 820px) {
+  /* Left Side Oval */
+  .absolute.flex.flex-col.space-y-4 .bg-\[\#1dbbec\] {
+    width: 250px !important; /* Increase width for tablets */
+    height: 120px !important; /* Increase height for tablets */
+    font-size: 16px !important; /* Adjust font size for tablets */
+  }
+
+  /* Main Centered Oval */
+  .absolute.bg-\[\#1dbbec\].border-2.border-white.opacity-90 {
+    width: 400px !important; /* Increase width for tablets */
+    height: 200px !important; /* Increase height for tablets */
+    top: 12em !important; /* Adjust position for tablets */
+    left: 50% !important; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust position to fully center it */
+  }
+
+  /* Adjust font size inside the centered oval */
+  .absolute.bg-\[\#1dbbec\].border-2.border-white.opacity-90 p {
+    font-size: 14px !important; /* Smaller font size for tablets */
+  }
+
+  .absolute.bg-\[\#1dbbec\].border-2.border-white.opacity-90 p span {
+    font-size: 16px !important; /* Adjust heading font size for tablets */
+  }
+}

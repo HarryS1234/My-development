@@ -13,7 +13,7 @@ const CountUpSection = () => {
 
   // Counting function
   useEffect(() => {
-    const interval = 50; // Speed of counting (lower = faster)
+    const interval = 90; // Speed of counting (lower = faster)
     const increment = 100; // Increment value for cooler and freezer projects
 
     const coolerInterval = setInterval(() => {
@@ -55,7 +55,7 @@ const CountUpSection = () => {
   }, [finalCoolerProjects, finalFreezerProjects, finalCustomerSatisfaction]);
 
   return (
-    <section className="py-12 bg-gray-100">
+    <section className="py-12 bg-white">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold mb-8">Our Quality Service Helps Us Grow</h2>
         <p className="text-gray-600 mb-12 text-lg md:text-xl font-semibold">

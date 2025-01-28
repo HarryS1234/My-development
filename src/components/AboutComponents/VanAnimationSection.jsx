@@ -35,7 +35,7 @@ const VanAnimationSection = () => {
       ref={vanRef}
       className="van-animation"
       style={{
-        backgroundColor: "#f0f0f0", // Adjust background color as needed
+        backgroundColor: "white", // Adjust background color as needed
         padding: "20px 0",
         overflow: "hidden", // Ensure the animation doesn't overflow
         minHeight: "300px", // Add a minimum height to ensure the image is visible

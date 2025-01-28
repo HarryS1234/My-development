@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div>
       <div>
-      <header className="bg-gray-100 text-white">
+      <header className="bg-white text-white">
         {/* Top Section (Logo and Contact Info) */}
         <div className="container mx-auto flex justify-between items-center py-4 px-4 md:px-6">
           {/* Logo */}

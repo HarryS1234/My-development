@@ -3,7 +3,7 @@ import refrigerationImg from "../../assets/Refrigeration.jpg";
 
 const About1 = () => {
   return (
-    <div className="bg-gray-100 py-12 px-6 sm:px-12 lg:px-24">
+    <div className="bg-white py-12 px-6 sm:px-12 lg:px-24">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-[#1dbbec] mb-8">About Us</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">

@@ -1,5 +1,5 @@
 import React from 'react'
-import backgroundImage from "../../assets/Cooler freezer.webp"; // Adjust the path to your image
+import backgroundImage from "../../assets/images/Cooler freezer.jpg"; // Adjust the path to your image
 const Heating1 = () => {
   return (
     <section

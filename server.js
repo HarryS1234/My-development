@@ -17,8 +17,8 @@ const transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
     user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS
-  }
+    pass: process.env.EMAIL_PASS,
+  },
 });
 
 // Verify email configuration
@@ -31,10 +31,17 @@ transporter.verify((error) => {
 });
 
 // Middleware
-app.use(cors({
-  origin: 'http://localhost:5181',
-  methods: ['POST', 'OPTIONS']
-}));
+app.use(
+  cors({
+    origin: [
+      'http://localhost:5181', // Local development
+      'http://192.168.2.167:5181', // Mobile/LAN // Ngrok URL
+      'https://www.veerjimechanical.ca/',
+      'https://2544-65-95-241-241.ngrok-free.app/' // Production
+    ],
+    methods: ['POST', 'OPTIONS'],
+  })
+);
 
 app.use(bodyParser.json());
 
@@ -47,7 +54,7 @@ app.use((req, res, next) => {
 // Form submission endpoint
 app.post('/submit-form', async (req, res) => {
   console.log('Received data:', req.body);
-  
+
   try {
     const { firstName, lastName, email, service, message } = req.body;
 
@@ -62,7 +69,7 @@ app.post('/submit-form', async (req, res) => {
     if (missingFields.length > 0) {
       return res.status(400).json({
         error: 'Missing required fields',
-        missingFields
+        missingFields,
       });
     }
 
@@ -79,7 +86,7 @@ app.post('/submit-form', async (req, res) => {
         <p><strong>Message:</strong></p>
         <pre>${message}</pre>
         <p>Received at: ${new Date().toLocaleString()}</p>
-      `
+      `,
     };
 
     const userEmail = {
@@ -93,7 +100,7 @@ app.post('/submit-form', async (req, res) => {
         <pre>${message}</pre>
         <p>Our team will respond within 24 business hours.</p>
         <p>Best regards,<br/>Service Team</p>
-      `
+      `,
     };
 
     // Send emails
@@ -102,19 +109,18 @@ app.post('/submit-form', async (req, res) => {
 
     res.status(200).json({
       success: true,
-      message: 'Request submitted successfully'
+      message: 'Request submitted successfully',
     });
-
   } catch (error) {
     console.error('Server Error:', {
       message: error.message,
       stack: error.stack,
-      code: error.code
+      code: error.code,
     });
-    
+
     res.status(500).json({
       error: 'Failed to process request',
-      details: error.response?.message || error.message
+      details: error.response?.message || error.message,
     });
   }
 });

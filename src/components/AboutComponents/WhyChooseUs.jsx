@@ -3,7 +3,7 @@ import { FaMoneyBillAlt, FaUserCheck, FaHandshake, FaUserFriends } from "react-i
 
 const WhyChooseSection = () => {
   return (
-    <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="bg-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-center text-[#1dbbec] mb-12">
           Why Choose VeerJi Mechanical?

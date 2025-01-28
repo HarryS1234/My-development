@@ -4,7 +4,8 @@ import Navbar from '../components/ReuseComponents/Navbar'
 import Ref1 from '../components/RefComponents/Ref1'
 import FlexboxSection from '../components/RefComponents/FlexBoxSection'
 import AssistanceSection from '../components/RefComponents/AssistanceSection'
-import Footer from '../components/ReuseComponents/Footer'
+import Footer from '../components/ReuseComponents/Footer.jsx'
+
 
 const Refrigeration = () => {
   return (

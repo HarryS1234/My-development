@@ -1,12 +1,15 @@
 import React from "react";
-import image from "../../assets/Refrigeration Background.webp";
+import image from "../../assets/refImages/freezer image.jpg";
+import image1 from "../../assets/refImages/Freezer image 2.jpg";
+import image2 from "../../assets/refImages/Refrigeration image.jpg";
+import image3 from "../../assets/refImages/24hours.png";
 
 const FlexboxSection = () => {
   return (
     <>
       {/* First Section: Image on the Right */}
-      <section className="min-h-[50vh] flex items-center justify-center bg-gray-100 py-8 sm:py-12">
-        <div className="flex flex-col md:flex-row items-center bg-gradient-to-r from-[#f9f9f9] to-[#e0e0e0] rounded-2xl border-2 border-gray-200 shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:border-[#1dbbec] mx-4 sm:mx-8 lg:mx-16">
+      <section className="min-h-[50vh] flex items-center justify-center bg-white py-8 sm:py-12">
+        <div className="flex flex-col md:flex-row items-center bg-white rounded-2xl border-2 border-gray-200 shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:border-[#1dbbec] mx-4 sm:mx-8 lg:mx-16">
           {/* Content on Left Side */}
           <div className="flex-1 p-6 sm:p-8 lg:p-10 flex flex-col justify-center order-2 md:order-1">
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 font-serif text-center md:text-left">
@@ -21,7 +24,7 @@ const FlexboxSection = () => {
           </div>
 
           {/* Image on Right Side */}
-          <div className="flex-1 order-1 md:order-2">
+          <div className="flex-1 order-1 md:order-2 h-64 md:h-96 overflow-hidden">
             <img
               src={image}
               alt="Refrigeration Image"
@@ -32,12 +35,12 @@ const FlexboxSection = () => {
       </section>
 
       {/* Second Section: Image on the Left */}
-      <section className="min-h-[50vh] flex items-center justify-center bg-gray-100 py-8 sm:py-12">
-        <div className="flex flex-col md:flex-row items-center bg-gradient-to-r from-[#f9f9f9] to-[#e0e0e0] rounded-2xl border-2 border-gray-200 shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:border-[#1dbbec] mx-4 sm:mx-8 lg:mx-16">
+      <section className="min-h-[50vh] flex items-center justify-center bg-white py-8 sm:py-12">
+        <div className="flex flex-col md:flex-row items-center bg-white rounded-2xl border-2 border-gray-200 shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:border-[#1dbbec] mx-4 sm:mx-8 lg:mx-16">
           {/* Image on Left Side */}
-          <div className="flex-1">
+          <div className="flex-1 h-64 md:h-96 overflow-hidden">
             <img
-              src={image}
+              src={image1}
               alt="Refrigeration Image"
               className="w-full h-full object-cover"
             />
@@ -59,8 +62,8 @@ const FlexboxSection = () => {
       </section>
 
       {/* Third Section: Image on the Right */}
-      <section className="min-h-[50vh] flex items-center justify-center bg-gray-100 py-8 sm:py-12">
-        <div className="flex flex-col md:flex-row items-center bg-gradient-to-r from-[#f9f9f9] to-[#e0e0e0] rounded-2xl border-2 border-gray-200 shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:border-[#1dbbec] mx-4 sm:mx-8 lg:mx-16">
+      <section className="min-h-[50vh] flex items-center justify-center bg-white py-8 sm:py-12">
+        <div className="flex flex-col md:flex-row items-center bg-white rounded-2xl border-2 border-gray-200 shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:border-[#1dbbec] mx-4 sm:mx-8 lg:mx-16">
           {/* Content on Left Side */}
           <div className="flex-1 p-6 sm:p-8 lg:p-10 flex flex-col justify-center order-2 md:order-1">
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 font-serif text-center md:text-left">
@@ -78,9 +81,9 @@ const FlexboxSection = () => {
           </div>
 
           {/* Image on Right Side */}
-          <div className="flex-1 order-1 md:order-2">
+          <div className="flex-1 order-1 md:order-2 h-64 md:h-96 overflow-hidden">
             <img
-              src={image}
+              src={image2}
               alt="Refrigeration Image"
               className="w-full h-full object-cover"
             />
@@ -89,12 +92,12 @@ const FlexboxSection = () => {
       </section>
 
       {/* Fourth Section: Image on the Left */}
-      <section className="min-h-[50vh] flex items-center justify-center bg-gray-100 py-8 sm:py-12">
-        <div className="flex flex-col md:flex-row items-center bg-gradient-to-r from-[#f9f9f9] to-[#e0e0e0] rounded-2xl border-2 border-gray-200 shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:border-[#1dbbec] mx-4 sm:mx-8 lg:mx-16">
+      <section className="min-h-[50vh] flex items-center justify-center bg-white py-8 sm:py-12">
+        <div className="flex flex-col md:flex-row items-center bg-white rounded-2xl border-2 border-gray-200 shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:border-[#1dbbec] mx-4 sm:mx-8 lg:mx-16">
           {/* Image on Left Side */}
-          <div className="flex-1">
+          <div className="flex-1 h-64 md:h-96 overflow-hidden">
             <img
-              src={image}
+              src={image3}
               alt="Refrigeration Image"
               className="w-full h-full object-cover"
             />

@@ -1,16 +1,16 @@
 import React from "react";
 
 // Import your images (replace with actual paths)
-import refrigerationImg from "../../assets/Refrigeration.jpg";
-import supermarketImg from "../../assets/clock.png";
-import airConditioningImg from "../../assets/clock.png";
-import heatingImg from "../../assets/clock.png";
-import walkInCoolerImg from "../../assets/clock.png";
-import troubleshootingImg from "../../assets/clock.png";
+import refrigerationImg from "../../assets/images/Project Image 4.webp";
+import supermarketImg from "../../assets/Supermarket.jpg";
+import airConditioningImg from "../../assets/images/Specialty freezer.png";
+import heatingImg from "../../assets/images/HVAC.jpg";
+import walkInCoolerImg from "../../assets/images/Walk-In-Cooler.jpg";
+import troubleshootingImg from "../../assets/images/repair.webp";
 
 const ServicesSection = () => {
   return (
-    <section className="py-12 bg-gray-100">
+    <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">What We Do Best</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -52,7 +52,7 @@ const ServicesSection = () => {
               className="w-full h-48 object-cover rounded-t-lg mb-4"
             />
             <h3 className="text-xl font-semibold mb-4 text-white group-hover:text-[#1dbbec] transition-colors duration-300">
-              Air Conditioning
+            Specialty Freezers
             </h3>
             <p className="text-white group-hover:text-gray-800 transition-colors duration-300">
               Installation and maintenance of air conditioning systems for commercial spaces.
@@ -67,7 +67,7 @@ const ServicesSection = () => {
               className="w-full h-48 object-cover rounded-t-lg mb-4"
             />
             <h3 className="text-xl font-semibold mb-4 text-white group-hover:text-[#1dbbec] transition-colors duration-300">
-              Heating Systems
+              HVAC Systems
             </h3>
             <p className="text-white group-hover:text-gray-800 transition-colors duration-300">
               Reliable heating solutions to keep your business warm during colder months.

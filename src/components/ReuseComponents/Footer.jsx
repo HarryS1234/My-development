@@ -1,15 +1,17 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'; // Social media icons
+import { FaFacebook, FaInstagram, FaLinkedin,FaTiktok } from 'react-icons/fa'; 
+import { RiTwitterXLine } from "react-icons/ri";// Social media icons
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import Icon from './Icon';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 text-black py-12">
+    <footer className="bg-white text-black py-12">
       <div className="container mx-auto px-4">
         {/* Logo Section */}
         <div className="flex justify-center mb-8">
-            <Icon /> {/* Custom height */}
-          </div>
+          <Icon /> {/* Custom height */}
+        </div>
 
         {/* Use justify-center to center the grid items */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center text-center md:text-left">
@@ -29,11 +31,21 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Our Services</h3>
             <ul className="space-y-2 text-[#1dbbec] font-bold">
-              <li>Commercial Refrigeration</li>
-              <li>Commercial Walk-In Cooler</li>
-              <li>Commercial Freezer</li>
-              <li>Heating & Air Conditioning</li>
-              <li>Installation/Maintenance</li>
+              <li>
+                <Link to="/refrigeration" className="hover:underline">Commercial Refrigeration</Link>
+              </li>
+              <li>
+                <Link to="/refrigeration" className="hover:underline">Commercial Walk-In Cooler</Link>
+              </li>
+              <li>
+                <Link to="/refrigeration" className="hover:underline">Commercial Freezer</Link>
+              </li>
+              <li>
+                <Link to="/heating-ac" className="hover:underline">Heating & Air Conditioning</Link>
+              </li>
+              <li>
+                <Link to="/maintenance" className="hover:underline">Installation/Maintenance</Link>
+              </li>
             </ul>
           </div>
 
@@ -41,17 +53,17 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Follow Us on Social Media</h3>
             <div className="flex space-x-4 justify-center md:justify-start">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-[#1dbbec] hover:text-blue-300">
+              <a href="https://www.facebook.com/profile.php?id=61569368603260" target="_blank" rel="noopener noreferrer" className="text-[#1dbbec] hover:text-blue-300">
                 <FaFacebook size={40} />
               </a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-[#1dbbec] hover:text-blue-300">
-                <FaTwitter size={40} />
+                <RiTwitterXLine size={40} />
               </a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-[#1dbbec] hover:text-blue-300">
                 <FaInstagram size={40} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-[#1dbbec] hover:text-blue-300">
-                <FaLinkedin size={40} />
+              <a href="https://Tiktok.com" target="_blank" rel="noopener noreferrer" className="text-[#1dbbec] hover:text-blue-300">
+                <FaTiktok size={40} />
               </a>
             </div>
           </div>

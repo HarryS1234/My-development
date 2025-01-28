@@ -1,5 +1,5 @@
 import React from 'react';
-import backgroundImage from "../../assets/Refrigeration Background.webp"; // Adjust the path to your image
+import backgroundImage from "../../assets/heating and ac.jpg"; // Adjust the path to your image
 
 const InstallationSection = () => {
   return (

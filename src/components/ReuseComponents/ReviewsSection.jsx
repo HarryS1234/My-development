@@ -68,7 +68,7 @@ const ReviewsSection = () => {
   };
 
   return (
-    <div className="p-8 bg-gradient-to-r from-blue-50 to-grey-100">
+    <div className="p-8 bg-gradient">
       <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">
         What our customers say
       </h2>
