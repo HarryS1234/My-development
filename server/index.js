@@ -30,7 +30,7 @@ transporter.verify((error) => {
 });
 
 // Middleware
-const allowedOrigins = ["https://my-development-client.vercel.app"];
+const allowedOrigins = ["https://hvac-for-veerji.vercel.app/"];
 
 app.use(
   cors({
