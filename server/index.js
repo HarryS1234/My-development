@@ -51,6 +51,10 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get("/", (req, res) => {
+  res.send("Welcome to the server");
+});
+
 // Form submission endpoint
 app.post("/submit-form", async (req, res) => {
   console.log("Received data:", req.body);
