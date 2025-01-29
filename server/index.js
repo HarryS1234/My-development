@@ -36,7 +36,7 @@ app.use(
       "http://localhost:5181", // Local development
       "http://192.168.2.167:5181", // Mobile/LAN // Ngrok URL
       "https://www.veerjimechanical.ca/",
-      "https://harry-new.vercel.app/",
+      "https://my-development-client.vercel.app/",
       "https://2544-65-95-241-241.ngrok-free.app/", // Production
     ],
     methods: ["POST", "OPTIONS"],
