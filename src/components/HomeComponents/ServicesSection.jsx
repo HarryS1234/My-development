@@ -1,13 +1,5 @@
 import React from "react";
 
-// Import your images (replace with actual paths)
-import refrigerationImg from "../../assets/images/Project Image 4.webp";
-import supermarketImg from "../../assets/Supermarket.jpg";
-import airConditioningImg from "../../assets/images/Specialty freezer.png";
-import heatingImg from "../../assets/images/HVAC.jpg";
-import walkInCoolerImg from "../../assets/images/Walk-In-Cooler.jpg";
-import troubleshootingImg from "../../assets/images/repair.webp";
-
 const ServicesSection = () => {
   return (
     <section className="py-12 bg-white">
@@ -17,7 +9,7 @@ const ServicesSection = () => {
           {/* Service 1: Commercial Refrigeration */}
           <div className="bg-[#1dbbec] p-6 rounded-lg shadow-md hover:bg-white transition-all duration-300 transform hover:-translate-y-2 border border-[#1dbbec] group overflow-hidden">
             <img
-              src={refrigerationImg}
+              src="/assets/images/Project%20Image%204.webp" // Updated path for refrigeration image
               alt="Commercial Refrigeration"
               className="w-full h-48 object-cover rounded-t-lg mb-4"
             />
@@ -32,7 +24,7 @@ const ServicesSection = () => {
           {/* Service 2: Commercial Supermarkets */}
           <div className="bg-[#1dbbec] p-6 rounded-lg shadow-md hover:bg-white transition-all duration-300 transform hover:-translate-y-2 border border-[#1dbbec] group overflow-hidden">
             <img
-              src={supermarketImg}
+              src="/assets/Supermarket.jpg" // Updated path for supermarket image
               alt="Commercial Supermarkets"
               className="w-full h-48 object-cover rounded-t-lg mb-4"
             />
@@ -47,12 +39,12 @@ const ServicesSection = () => {
           {/* Service 3: Air Conditioning */}
           <div className="bg-[#1dbbec] p-6 rounded-lg shadow-md hover:bg-white transition-all duration-300 transform hover:-translate-y-2 border border-[#1dbbec] group overflow-hidden">
             <img
-              src={airConditioningImg}
+              src="/assets/images/Specialty%20freezer.png" // Updated path for air conditioning image
               alt="Air Conditioning"
               className="w-full h-48 object-cover rounded-t-lg mb-4"
             />
             <h3 className="text-xl font-semibold mb-4 text-white group-hover:text-[#1dbbec] transition-colors duration-300">
-            Specialty Freezers
+              Specialty Freezers
             </h3>
             <p className="text-white group-hover:text-gray-800 transition-colors duration-300">
               Installation and maintenance of air conditioning systems for commercial spaces.
@@ -62,7 +54,7 @@ const ServicesSection = () => {
           {/* Service 4: Heating Systems */}
           <div className="bg-[#1dbbec] p-6 rounded-lg shadow-md hover:bg-white transition-all duration-300 transform hover:-translate-y-2 border border-[#1dbbec] group overflow-hidden">
             <img
-              src={heatingImg}
+              src="/assets/images/HVAC.jpg" // Updated path for heating image
               alt="Heating Systems"
               className="w-full h-48 object-cover rounded-t-lg mb-4"
             />
@@ -77,7 +69,7 @@ const ServicesSection = () => {
           {/* Service 5: Walk-In Coolers */}
           <div className="bg-[#1dbbec] p-6 rounded-lg shadow-md hover:bg-white transition-all duration-300 transform hover:-translate-y-2 border border-[#1dbbec] group overflow-hidden">
             <img
-              src={walkInCoolerImg}
+              src="/assets/images/Walk-In-Cooler.jpg"// Updated path for walk-in cooler image
               alt="Walk-In Coolers"
               className="w-full h-48 object-cover rounded-t-lg mb-4"
             />
@@ -92,7 +84,7 @@ const ServicesSection = () => {
           {/* Service 6: Troubleshooting & Repairs */}
           <div className="bg-[#1dbbec] p-6 rounded-lg shadow-md hover:bg-white transition-all duration-300 transform hover:-translate-y-2 border border-[#1dbbec] group overflow-hidden">
             <img
-              src={troubleshootingImg}
+              src="/assets/images/Repair.webp"// Updated path for troubleshooting image
               alt="Troubleshooting & Repairs"
               className="w-full h-48 object-cover rounded-t-lg mb-4"
             />

@@ -1,5 +1,4 @@
 import React, { useRef, useEffect, useState } from "react";
-import vanImage from "../../assets/new van (1).webp"; // Ensure the path is correct
 
 const VanAnimationSection = () => {
   const vanRef = useRef(null);
@@ -44,7 +43,7 @@ const VanAnimationSection = () => {
     >
       {isVisible && (
         <img
-          src={vanImage}
+          src="/assets/new van (1).webp" // Updated path to the public folder
           alt="Van"
           className="van"
           loading="lazy" // Lazy load the image
@@ -58,8 +57,6 @@ const VanAnimationSection = () => {
           }}
         />
       )}
-      
-     
     </div>
   );
 };

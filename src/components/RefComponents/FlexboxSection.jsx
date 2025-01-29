@@ -1,8 +1,4 @@
 import React from "react";
-import image from "../../assets/refImages/freezer image.jpg";
-import image1 from "../../assets/refImages/Freezer image 2.jpg";
-import image2 from "../../assets/refImages/Refrigeration image.jpg";
-import image3 from "../../assets/refImages/24hours.png";
 
 const FlexboxSection = () => {
   return (
@@ -26,7 +22,7 @@ const FlexboxSection = () => {
           {/* Image on Right Side */}
           <div className="flex-1 order-1 md:order-2 h-64 md:h-96 overflow-hidden">
             <img
-              src={image}
+              src="/assets/refImages/freezer image.jpg" // Updated path
               alt="Refrigeration Image"
               className="w-full h-full object-cover"
             />
@@ -40,7 +36,7 @@ const FlexboxSection = () => {
           {/* Image on Left Side */}
           <div className="flex-1 h-64 md:h-96 overflow-hidden">
             <img
-              src={image1}
+              src="/assets/refImages/Freezer image 2.jpg" // Updated path
               alt="Refrigeration Image"
               className="w-full h-full object-cover"
             />
@@ -83,7 +79,7 @@ const FlexboxSection = () => {
           {/* Image on Right Side */}
           <div className="flex-1 order-1 md:order-2 h-64 md:h-96 overflow-hidden">
             <img
-              src={image2}
+              src="/assets/refImages/Refrigeration image.jpg" // Updated path
               alt="Refrigeration Image"
               className="w-full h-full object-cover"
             />
@@ -97,7 +93,7 @@ const FlexboxSection = () => {
           {/* Image on Left Side */}
           <div className="flex-1 h-64 md:h-96 overflow-hidden">
             <img
-              src={image3}
+              src="/assets/refImages/24hours.png" // Updated path
               alt="Refrigeration Image"
               className="w-full h-full object-cover"
             />

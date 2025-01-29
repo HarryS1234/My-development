@@ -1,6 +1,5 @@
 import React from "react";
 import ServicesSection from "../components/HomeComponents/ServicesSection.jsx";
-import videoFile from "../assets/video1.mp4";
 import CountUpSection from "../components/HomeComponents/CountUpSection.jsx";
 import BrandsSection from "../components/HomeComponents/BrandsSection.jsx";
 import ContactSection from "../components/ReuseComponents/ContactSection.jsx";
@@ -25,7 +24,9 @@ const Home = () => {
           loop
           className="absolute w-full h-full object-cover"
         >
-          <source src={videoFile} type="video/mp4" />
+          <source src="/assets/video1.mp4" // Direct path to the video file
+    type="video/mp4"
+          />
           Your browser does not support the video tag.
         </video>
 

@@ -1,5 +1,4 @@
 import React from "react";
-import refrigerationImg from "../../assets/Refrigeration.jpg";
 
 const About1 = () => {
   return (
@@ -53,7 +52,7 @@ const About1 = () => {
           {/* Image Section */}
           <div className="relative overflow-hidden rounded-lg shadow-lg border-4 border-[#1dbbec]">
             <img
-              src={refrigerationImg} // Replace with your image URL
+              src="/assets/Refrigeration.jpg" // Updated path to the public folder
               alt="VeerJi Mechanical Services"
               className="w-full h-auto transform transition-transform duration-500 hover:scale-110"
             />

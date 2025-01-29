@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom"; // Import Link and useLocation from react-router-dom
-import logo from "../../assets/Logo webp.webp";
 
 const Navbar = () => {
   const location = useLocation(); // Get the current route location
@@ -23,7 +22,11 @@ const Navbar = () => {
               onClick={handleMenuClose} // Close the menu if open
               className="h-full"
             >
-              <img src={logo} alt="Logo" className="h-full" />
+              <img
+                src="/assets/Logo webp.webp" // Path from the public folder
+                alt="Logo"
+                className="h-full"
+              />
             </Link>
           </div>
 

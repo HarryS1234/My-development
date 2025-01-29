@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import logo from "../../assets/Logo webp.webp";
 
 const Preloader = () => {
   const [loading, setLoading] = useState(true);
@@ -33,7 +32,7 @@ const Preloader = () => {
 
         {/* Logo with enhanced bounce animation */}
         <img
-          src={logo} // Replace with your logo path
+          src= "/assets/Logo%20webp.webp "
           alt="Logo"
           className="w-24 h-24 animate-super-bounce z-50" // Custom bounce animation
         />

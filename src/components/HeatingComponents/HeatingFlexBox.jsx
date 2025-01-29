@@ -1,10 +1,4 @@
 import React from 'react';
-import image1 from "../../assets/screenshot/img5.png"; // Replace with your image paths
-import image2 from "../../assets/screenshot/img6.png";
-import image3 from "../../assets/screenshot/img7.png";
-import image4 from "../../assets/screenshot/img8.png";
-import image5 from "../../assets/screenshot/img9.png";
-import image6 from "../../assets/screenshot/img10.png";
 
 const HeatingFlexBox = () => {
   return (
@@ -20,7 +14,7 @@ const HeatingFlexBox = () => {
           {/* Image on Left */}
           <div className="flex-1 h-64 md:h-96"> {/* Fixed height for the image container */}
             <img
-              src={image1}
+              src="/assets/screenshot/img5.png"
               alt="Installation Image 1"
               className="w-full h-full object-cover" /* Ensure the image covers the container */
             />
@@ -52,7 +46,7 @@ const HeatingFlexBox = () => {
           {/* Image on Right */}
           <div className="flex-1 h-64 md:h-96 order-1 md:order-2"> {/* Fixed height for the image container */}
             <img
-              src={image2}
+              src="/assets/screenshot/img6.png"
               alt="Installation Image 2"
               className="w-full h-full object-cover" /* Ensure the image covers the container */
             />
@@ -64,7 +58,7 @@ const HeatingFlexBox = () => {
           {/* Image on Left */}
           <div className="flex-1 h-64 md:h-96"> {/* Fixed height for the image container */}
             <img
-              src={image3}
+              src="/assets/screenshot/img7.png"
               alt="Installation Image 3"
               className="w-full h-full object-cover" /* Ensure the image covers the container */
             />
@@ -100,7 +94,7 @@ const HeatingFlexBox = () => {
           {/* Image on Right */}
           <div className="flex-1 h-64 md:h-96 order-1 md:order-2"> {/* Fixed height for the image container */}
             <img
-              src={image4}
+              src="/assets/screenshot/img8.png"
               alt="Installation Image 4"
               className="w-full h-full object-cover" /* Ensure the image covers the container */
             />
@@ -112,7 +106,7 @@ const HeatingFlexBox = () => {
           {/* Image on Left */}
           <div className="flex-1 h-64 md:h-96"> {/* Fixed height for the image container */}
             <img
-              src={image5}
+              src="/assets/screenshot/img9.png"
               alt="Installation Image 5"
               className="w-full h-full object-cover" /* Ensure the image covers the container */
             />
@@ -144,7 +138,7 @@ const HeatingFlexBox = () => {
           {/* Image on Right */}
           <div className="flex-1 h-64 md:h-96 order-1 md:order-2"> {/* Fixed height for the image container */}
             <img
-              src={image6}
+              src="/assets/screenshot/img10.png"
               alt="Installation Image 6"
               className="w-full h-full object-cover" /* Ensure the image covers the container */
             />
@@ -153,6 +147,6 @@ const HeatingFlexBox = () => {
       </section>
     </div>
   );
-};
+}
 
 export default HeatingFlexBox;

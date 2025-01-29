@@ -1,10 +1,4 @@
 import React from "react";
-import image1 from "../../assets/images/Project Image.webp"; // Replace with your image paths
-import image2 from "../../assets/screenshot/img1.png";
-import image3 from "../../assets/screenshot/img2.png";
-import image4 from "../../assets/screenshot/img3.png";
-import image5 from "../../assets/screenshot/img4.png";
-import image6 from "../../assets/Coolers.jpg";
 
 const InstallFlexBox = () => {
   return (
@@ -19,7 +13,7 @@ const InstallFlexBox = () => {
         {/* Image on Left */}
         <div className="flex-1 h-64 md:h-96 overflow-hidden">
           <img
-            src={image1}
+            src="/assets/images/Project Image.webp"
             alt="Installation Image 1"
             className="w-full h-full object-cover"
           />
@@ -57,7 +51,7 @@ const InstallFlexBox = () => {
         {/* Image on Right */}
         <div className="flex-1 h-64 md:h-96 overflow-hidden order-1 md:order-2">
           <img
-            src={image2}
+            src="/assets/screenshot/img1.png"
             alt="Installation Image 2"
             className="w-full h-full object-cover"
           />
@@ -69,7 +63,7 @@ const InstallFlexBox = () => {
         {/* Image on Left */}
         <div className="flex-1 h-64 md:h-96 overflow-hidden">
           <img
-            src={image3}
+            src="/assets/screenshot/img2.png"
             alt="Installation Image 3"
             className="w-full h-full object-cover"
           />
@@ -108,7 +102,7 @@ const InstallFlexBox = () => {
         {/* Image on Right */}
         <div className="flex-1 h-64 md:h-96 overflow-hidden order-1 md:order-2">
           <img
-            src={image4}
+            src="assets/screenshot/img3.png"
             alt="Installation Image 4"
             className="w-full h-full object-cover"
           />
@@ -120,7 +114,7 @@ const InstallFlexBox = () => {
         {/* Image on Left */}
         <div className="flex-1 h-64 md:h-96 overflow-hidden">
           <img
-            src={image5}
+            src="/assets/screenshot/img4.png"
             alt="Installation Image 5"
             className="w-full h-full object-cover"
           />
@@ -157,7 +151,7 @@ const InstallFlexBox = () => {
         {/* Image on Right */}
         <div className="flex-1 h-64 md:h-96 overflow-hidden order-1 md:order-2">
           <img
-            src={image6}
+            src="/assets/Coolers.jpg"
             alt="Installation Image 6"
             className="w-full h-full object-cover"
           />

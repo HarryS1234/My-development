@@ -1,12 +1,12 @@
 import React from 'react';
-import backgroundImage from "../../assets/heating and ac.jpg"; // Adjust the path to your image
+
 
 const InstallationSection = () => {
   return (
     <>
     <section
       className="relative h-screen flex items-center justify-center bg-cover bg-center"
-      style={{ backgroundImage: `url(${backgroundImage})` }} // Use the imported image
+      style={{ backgroundImage: 'url("/assets/heating and ac.jpg")' }} // Use the imported image
     >
       {/* Transparent Container */}
       <div className="relative z-10 bg-[#f9f9f9] opacity-75 backdrop-blur-md  rounded-xl border-2 border-white border-opacity-30 shadow-lg p-8 sm:p-12 lg:p-16 max-w-2xl mx-4 text-center transform transition-all duration-500 hover:scale-105">
