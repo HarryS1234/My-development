@@ -1,7 +1,6 @@
 import React from 'react'
 import Icon from './Icon'
 
-import clock from '/Users/hargobindsingh/Local Documents/Coding/Websites/Hvac/src/assets/clock.png'
 
 const Header = () => {
   return (
@@ -20,7 +19,7 @@ const Header = () => {
             {/* Clock Icon with Continuous Blinking Effect */}
             <img
               className="w-12 h-12 md:w-16 md:h-16 mb-10 animate-blink" // Apply the blinking class
-              src={clock}
+              src="/assets/clock.png"
               alt="Clock Icon"
             />
             <div className="text-right text-black">
