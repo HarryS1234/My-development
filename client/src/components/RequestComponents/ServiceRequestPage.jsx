@@ -21,7 +21,7 @@ export default function ServiceRequestForm() {
     
     try {
       const response = await axios.post(
-        `${import.meta.env.VITE_SERVER}`,
+        `${import.meta.env.VITE_SERVER}/submit-form`,
         { ...data, recaptchaValue }
       );
       
