@@ -30,18 +30,23 @@ transporter.verify((error) => {
 });
 
 // Middleware
+const allowedOrigins = ["https://my-development-client.vercel.app"];
+
 app.use(
   cors({
-    origin: [
-      "http://localhost:5181", // Local development
-      "http://192.168.2.167:5181", // Mobile/LAN // Ngrok URL
-      "https://www.veerjimechanical.ca/",
-      "https://my-development-client.vercel.app/",
-      "https://2544-65-95-241-241.ngrok-free.app/", // Production
-    ],
-    methods: ["POST", "OPTIONS"],
+    origin: (origin, callback) => {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
   })
 );
+
 
 app.use(express.json());
 
