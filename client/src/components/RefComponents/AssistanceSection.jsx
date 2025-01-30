@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
 
 const AssistanceSection = () => {
   return (
@@ -26,12 +28,12 @@ const AssistanceSection = () => {
         </p>
 
         {/* Contact Button */}
-        <a
-                href="/service-request"
-                className="bg-transparent text-center border-2 border-[#1dbbec] text-[#1dbbec] font-semibold py-3 px-8 rounded-lg hover:bg-[#1dbbec] hover:text-white transition duration-300 transform hover:scale-105"
-              >
-                Contact Now
-              </a>
+        <Link
+  to="/service-request"
+  className="bg-transparent border-2 border-[#1dbbec] text-[#1dbbec] font-semibold py-3 px-8 rounded-lg hover:bg-[#1dbbec] hover:text-white transition duration-300 transform hover:scale-105"
+>
+  Contact Now
+</Link>
       </div>
     </section>
   );

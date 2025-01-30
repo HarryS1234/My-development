@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Heating1 = () => {
   return (
@@ -20,19 +21,23 @@ const Heating1 = () => {
 
         {/* Description */}
         <p className="text-sm sm:text-base lg:text-lg text-black font-semibold mb-6">
-          Your business deserves reliable heating and cooling to maintain a comfortable and productive environment. At VeerJi Cooling Comforts, we provide expert installations and proactive maintenance that keep your systems running smoothly, ensuring year-round efficiency with minimal disruptions.
+          Your business deserves reliable heating and cooling to maintain a
+          comfortable and productive environment. At VeerJi Cooling Comforts, we
+          provide expert installations and proactive maintenance that keep your
+          systems running smoothly, ensuring year-round efficiency with minimal
+          disruptions.
         </p>
 
         {/* Contact Button */}
-        <a
-          href="/service-request"
-          className="bg-transparent border-2 border-[#1dbbec] text-[#1dbbec] font-semibold py-3 px-8 rounded-lg hover:bg-[#1dbbec] hover:text-white transition duration-300 transform hover:scale-105 "
+        <Link
+          to="/service-request"
+          className="bg-transparent border-2 border-[#1dbbec] text-[#1dbbec] font-semibold py-3 px-8 rounded-lg hover:bg-[#1dbbec] hover:text-white transition duration-300 transform hover:scale-105"
         >
           Contact Now
-        </a>
+        </Link>
       </div>
     </section>
   );
-}
+};
 
 export default Heating1;
