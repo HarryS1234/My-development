@@ -30,7 +30,7 @@ transporter.verify((error) => {
 });
 
 // Middleware
-const allowedOrigins = ["https://hvac-for-veerji.vercel.app"];
+const allowedOrigins = ["https://www.veerjimechanical.ca"];
 
 app.use(
   cors({
